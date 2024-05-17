@@ -4,6 +4,7 @@ import { invoke } from "@tauri-apps/api/core";
 import "./App.css";
 import { Flex, Text, Button } from '@radix-ui/themes';
 import LoadingBar from "./components/common/LoadingBar/LoadingBar";
+import HeaderBar from "./components/common/OSD/headerBar/headerBar"
 
 function App() {
   // const [greetMsg, setGreetMsg] = useState("");
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <main>
+      <HeaderBar title="Ink-art"></HeaderBar>
       <LoadingBar type="knight-rider"></LoadingBar>
       {/* <Flex direction="column" gap="2">
       <Text>Hello from Radix Themes :)</Text>
