@@ -1,8 +1,8 @@
 [package]
 name = "ink-art"
 version = "0.0.0"
-description = "A Tauri App"
-authors = ["you"]
+description = "Color picker and color mixer application for everyone."
+authors = ["Kacper Paczos <kacper-paczos@linux.pl>"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
