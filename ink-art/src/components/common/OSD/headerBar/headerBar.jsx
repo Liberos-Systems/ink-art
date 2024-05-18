@@ -25,10 +25,6 @@ function HeaderBar({ title = "App Title" }) {
         setIsMaximized(!isMaximized);
     }
 
-    // useEffect(() => {
-    //     getCurrent().then(window => window.center());
-    // }, []);
-
     return (
         <div className="headerBar">
             <div className="title">{title}</div>
