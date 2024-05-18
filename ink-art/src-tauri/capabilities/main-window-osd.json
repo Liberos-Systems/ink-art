@@ -10,6 +10,7 @@
     "window:allow-maximize",
     "window:allow-close",
     "window:allow-unmaximize",
+    "window:allow-center",
     "app:default",
     "image:default",
     "resources:default",
