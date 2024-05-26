@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './knight-rider.css'; // Importowanie stylów CSS
+import styles from './knight-rider.module.css';
 
 const KnightRider = ({ divisions = 15 }) => { // Domyślna liczba lampek to 15
   const [activeIndex, setActiveIndex] = useState(0);
@@ -21,9 +21,9 @@ const KnightRider = ({ divisions = 15 }) => { // Domyślna liczba lampek to 15
   }, [direction, divisions]);
 
   return (
-    <div className="indeterminate">
+    <div className={styles.indeterminate}>
       <div
-        className="indicator active"
+        className={`${styles.indicator} ${styles.active}`}
         style={{ width: `${100 / divisions}%`, left: `${(100 / divisions) * activeIndex}%` }}
       ></div>
     </div>

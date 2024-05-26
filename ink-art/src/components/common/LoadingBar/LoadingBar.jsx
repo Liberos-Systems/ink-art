@@ -1,6 +1,5 @@
 import React from 'react';
-import { Progress, Indicator } from '@radix-ui/react-progress';
-import './LoadingBar.css';
+import styles from './LoadingBar.module.css';
 
 import KnightRider from "./types/knight-rider/knight-rider";
 
@@ -14,7 +13,7 @@ function LoadingBar({ value, maxValue, onProgressComplete, indeterminate, type =
 
   if (type === 'infinite') {
     return (
-      <div style={{ textAlign: 'center' }}>Not implemented yet</div>
+      <div className={styles.indeterminate}>Not implemented yet</div>
     );
   } else if (type === 'knight-rider') {
     return (
@@ -22,7 +21,9 @@ function LoadingBar({ value, maxValue, onProgressComplete, indeterminate, type =
     );
   } else { // Domyślnie renderuj jako 'normal'
     return (
-      <div style={{ textAlign: 'center' }}>Not implemented yet</div>
+      <div className={styles.progress}>
+        <div className={styles.indicator} style={{ width: `${progressValue}%` }}></div>
+      </div>
     );
   }
 }

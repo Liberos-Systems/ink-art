@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './headerBar.css';
+import styles from './headerBar.module.css';
 import { getCurrent } from '@tauri-apps/api/window';
 
 function HeaderBar({ title = "App Title" }) {
@@ -26,9 +26,9 @@ function HeaderBar({ title = "App Title" }) {
     }
 
     return (
-        <div className="headerBar">
-            <div className="title">{title}</div>
-            <div className="windowControls">
+        <div className={styles.headerBar}>
+            <div className={styles.title}>{title}</div>
+            <div className={styles.windowControls}>
                 <button onClick={minimizeApp}>Minimize</button>
                 <button onClick={toggleMaximizeApp}>{isMaximized ? 'Restore' : 'Maximize'}</button>
                 <button onClick={closeApp}>Close</button>

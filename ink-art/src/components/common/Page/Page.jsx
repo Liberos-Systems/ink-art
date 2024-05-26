@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Page.css';
+import styles from './Page.module.css';
 
 function Page({ children, onLoaded }) {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -12,7 +12,7 @@ function Page({ children, onLoaded }) {
     }, [onLoaded]);
 
     return (
-        <div className={`page ${isLoaded ? 'loaded' : ''}`}>
+        <div className={`${styles.page} ${isLoaded ? styles.loaded : ''}`}>
             {children}
         </div>
     );

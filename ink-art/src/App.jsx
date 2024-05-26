@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./App.css";
+import styles from "./App.module.css";
 import LoadingBar from "./components/common/LoadingBar/LoadingBar";
-import HeaderBar from "./components/common/OSD/headerBar/headerBar"
+import HeaderBar from "./components/common/OSD/headerBar/headerBar";
 import Window from "./components/common/Window/Window";
 import Page from "./components/common/Page/Page";
 
@@ -14,10 +14,9 @@ function App() {
 
   return (
     <Window>
-      <HeaderBar title="Ink-art"></HeaderBar>
-      {loading && <LoadingBar type="knight-rider"></LoadingBar>}
-      <Page onLoaded={handlePageLoaded}>
-      </Page>
+      <HeaderBar title="Ink-art" />
+      {loading && <LoadingBar type="knight-rider" />}
+      <Page onLoaded={handlePageLoaded} />
     </Window>
   );
 }
