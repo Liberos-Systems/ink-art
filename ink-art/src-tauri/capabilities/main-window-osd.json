@@ -11,6 +11,8 @@
     "window:allow-close",
     "window:allow-unmaximize",
     "window:allow-center",
+    "window:allow-outer-position",
+    "window:allow-set-position",
     "app:default",
     "image:default",
     "resources:default",
