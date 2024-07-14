@@ -1,0 +1,21 @@
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.window {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInScale 0.3s ease-in-out forwards;
+}
+
+.window.visible {
+    opacity: 1;
+    transform: scale(1);
+}
