@@ -5,10 +5,11 @@ import { Theme, ThemePanel } from '@radix-ui/themes';
 
 import "./styles.css";
 import '@radix-ui/themes/styles.css';
+import 'visage/visage.css'; // Import stylów visage
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Theme style={{ backgroundColor: 'transparent' }}>
+    <Theme style={{ backgroundColor: 'red' }}>
       <App />
     </Theme>
   </React.StrictMode>,

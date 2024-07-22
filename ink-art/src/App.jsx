@@ -1,9 +1,6 @@
 import { useState } from "react";
 import styles from "./App.module.css";
-import LoadingBar from "./components/common/LoadingBar/LoadingBar";
-import HeaderBar from "./components/common/OSD/headerBar/headerBar";
-import Window from "./components/common/Window/Window";
-import Page from "./components/common/Page/Page";
+import { Window, LoadingBar, HeaderBar, Page } from "visage";
 
 function App() {
   const [loading, setLoading] = useState(true);
